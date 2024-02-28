@@ -1,6 +1,6 @@
 // Function implementation
-function solution (A, K) {
-    //check the length of rotation
+function solution(A, K) {
+    // Iteration
     const N = A.length;
     if (N === 0) {
       return A;
@@ -17,7 +17,15 @@ function solution (A, K) {
       rotatedArray[newValue] = A[i];
     }
     return rotatedArray;
-  
   }
-  const result  = solution(A, K);
-  console.log(result);
+  
+  // Example usage
+  const exampleUsage1 = solution([3, 8, 9, 7, 6], 3);
+  console.log(exampleUsage1); // Output: [9, 7, 6, 3, 8]
+  
+  const exampleUsage2 = solution([0, 0, 0], 1);
+  console.log(exampleUsage2); // Output: [0, 0, 0]
+  
+  const exampleUsage3 = solution([1, 2, 3, 4], 4);
+  console.log(exampleUsage3); // Output: [1, 2, 3, 4]
+  
