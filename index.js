@@ -19,3 +19,5 @@ function solution (A, K) {
     return rotatedArray;
   
   }
+  const result  = solution(A, K);
+  console.log(result);
